@@ -1,44 +1,6 @@
-# Purpose 
-This folder is the template folder for github repositories. Use this as a base to create and commit code to github.com 
+# Exploratory Data Aanlysis on Accidents in France (2005-2016)
+Data analysis on accidents in France (2005 - 2016) was performed to reveal trends. Matplotlib and Seaborn libraries were used to create several visualisation like stacked bar charts, histograms, nested pie charts and heatmap. Below were the inferences:
+1. For all years, the lowest number of accidents occur in February, followed by a dip in August. Highest number of accidents occur in the months of June and October.
+2. Highest number of accidents occur during 5:00 - 6:00pm,  when people are commuting from work or going on a leisure ride.
+3. Users in the age group of 20-50 incurring maximum number of accidents.
 
-# 1. Create the new folder
-
-Copy the entire contents of the ```docker-template``` folder and re-name the ```my-new-folder-2```
-
-# 2. Initialise git 
-
-- Navigate to ```my-new-folder-2``` folder in the terminal
-```bash
-ssh-add
-git init
-git add .
-git status 
-git commit -m "Init new repo first commit" 
-```
-
-# 3. Create a new repo at github.com 
-
-- Create a repository at github.com with the same name as the new folder ```my-new-folder-2```
-- Select public or private as desired
->Use this option __…or push an existing repository from the command line__
-```
-git remote add origin git@github.com:CrazyDaffodils/my-new-folder-2.git
-git push -u origin master
-```
-
-# 4. Update required packages 
-- Navigate to ```my-new-folder-2``` folder in the terminal and to open the folder in VS Code
-```bash
-code . 
-```
-- Modify the ```docker/Dockerfile``` with the appropriate packages. Then rebuild docker images
-```bash
-docker-compose up --build
-```
-- Push the changes to git & github.com
-```bash
-git add .
-git status
-git commit -m "Package changes"
-git push
-```
